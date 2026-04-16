@@ -58,7 +58,7 @@ The goal is to demonstrate real-world DevOps practices.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/devops-ci-cd-docker-project.git
+git clone https://github.com/itsJakeChambers/devops-ci-cd-docker-project.git
 cd devops-ci-cd-docker-project
 ```
 
