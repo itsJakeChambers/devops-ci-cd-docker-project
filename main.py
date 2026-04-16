@@ -21,7 +21,7 @@ async def get_lieux():
     return {'donnees': donnees}, 200
 
 @app.post("/lieux")
-async def post_lieux(lieu: str):
+async def post_lieu(lieu: str):
     # si le lieu est déjà présent, nous ne l'ajoutons pas aux données
     if lieu in donnees['lieux']:
         # donc retourner simplement la réponse avec un message disant qu'il existe déjà
@@ -32,3 +32,16 @@ async def post_lieux(lieu: str):
         donnees['lieux'].append(lieu)
         #reponse de retour
         return {'donnees': donnees, 'message': "l'emplacement a été ajouté"}
+    
+
+@app.delete("/lieux/")
+async def delete_lieu(lieu: str):
+    # si le lieu est présent on le supprime 
+    if lieu in donnees['lieux']:
+        donnees['lieux'].remove(lieu)
+        # réponse de retour confirmant la suppression
+        return {'donnees': donnees, 'message': "l'emplacement a été supprimé"}
+    
+    # s'il n'est pas présent, renvoyez simplement la réponse
+    else:
+        return {'donnees': donnees, 'message': "le lieu n'existe pas"}
