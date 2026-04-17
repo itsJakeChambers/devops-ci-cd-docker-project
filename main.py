@@ -45,3 +45,4 @@ async def delete_lieu(lieu: str):
     # s'il n'est pas présent, renvoyez simplement la réponse
     else:
         return {'donnees': donnees, 'message': "le lieu n'existe pas"}
+    
