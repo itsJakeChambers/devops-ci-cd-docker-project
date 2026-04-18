@@ -104,8 +104,8 @@ Key steps:
 
 ## 📊 API Endpoints
 
-* `/` → Hello World
-* `/health` → Service status
+* `/` → Docs
+* `/lieux` → City
 
 ---
 
