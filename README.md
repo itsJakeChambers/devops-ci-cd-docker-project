@@ -127,4 +127,4 @@ Key steps:
 
 ## 👤 Author
 
-Project created as part of a DevOps learning journey. 
+Project created as part of a DevOps learning journey.  
